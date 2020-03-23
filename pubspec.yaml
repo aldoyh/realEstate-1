@@ -1,4 +1,4 @@
-name: real_state
+name: nrhomesapp
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -11,7 +11,7 @@ description: A new Flutter application.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.5.5+1000
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -19,17 +19,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^3.1.0+1
-  flutter_xlider: ^2.5.3
+  provider: ^4.0.4
+  flutter_xlider: ^3.1.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^0.1.3
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.7.4
   flutter_test:
     sdk: flutter
 
+# Run this script to generate the app icon: flutter pub pub run flutter_launcher_icons:main
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/nasser-real-iconx512-noalpha.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -48,6 +54,13 @@ flutter:
   #  - images/a_dot_ham.jpeg
   assets:
     - images/
+
+  fonts:
+    - family: Dubai
+      fonts:
+        - asset: fonts/DubaiW32-Regular.ttf
+        - asset: fonts/DubaiW32-Medium.ttf
+        - asset: fonts/DubaiW32-Bold.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
